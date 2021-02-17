@@ -1,0 +1,1 @@
+m32 split direct out & clouds via vca. 2 gate signals, one on first beat, second maths eor, switched on 2nd 16th and 16th. Maths rise mod pam /4 ramp. pam /4 ramp to vcf cutoff & m32 mix, amount modulated by pam /4 random. 
