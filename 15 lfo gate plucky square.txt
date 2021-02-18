@@ -1,1 +1,0 @@
-m32 with lfo going into gate to trigger with plucky attack
