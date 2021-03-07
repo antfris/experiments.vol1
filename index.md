@@ -34,7 +34,10 @@ has a high degree of flexibility in timbre.
 dfam sequence morphagene organise
 - [06 techno jam.mp3](06 techno jam.mp3)
 
-solid inharmonic note after filter transition
+plaits solid inharmonic note after filter transition
+- [06 techno jam.mp3 00:39](06 techno jam.mp3)
+
+dirty techno dfam kick
 - [06 techno jam.mp3 00:39](06 techno jam.mp3)
 
 # to exp
