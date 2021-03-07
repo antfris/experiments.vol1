@@ -3,11 +3,11 @@
 # Concepts
 
 ### solid notes
-- [01 chordy accordian](01 chordy accordian.mp3)
+- [01 chordy accordian.mp3](01 chordy accordian.mp3)
 
 ### sequencing dfam pitches individually
-- [02 plucky star drops](02 plucky star drops.mp3)
-- [03 plucky dual arp](03 plucky dual arp.mp3)
+- [02 plucky star drops.mp3](02 plucky star drops.mp3)
+- [03 plucky dual arp.mp3](03 plucky dual arp.mp3)
 
 ### lfo modulating other lfo modulating vca
 - [04 panning square bass lfolfo.mp3](04 panning square bass lfolfo.mp3)
@@ -65,34 +65,34 @@ increasing the speed of an amplitude modulation from lfo rate to audio rate.
 ### plaits accordian or stringish sound
 - [09 lfo verb drone.mp3](09 lfo verb drone.mp3)
 
-### delayed unquantized additional gate
+##### delayed unquantized additional gate
 - [10 plucky delay grove.mp3](10 plucky delay grove.mp3)
 
-### mother 32 plucky square sound
+##### mother 32 plucky square sound
 - [10 plucky delay grove.mp3](10 plucky delay grove.mp3)
 - [15 lfo gate plucky square.mp3](15 lfo gate plucky square.mp3)
 
-### manually modulating attack
+##### manually modulating attack
 - [11 arp plucky square mono.mp3](11 arp plucky square mono.mp3)
 
-### manually modulating cutoff
+#### manually modulating cutoff
 - [11 arp plucky square mono.mp3](11 arp plucky square mono.mp3)
 
-### morphagene layering octaves and direction
+#### morphagene layering octaves and direction
 - [12 morph arp octave.mp3](12 morph arp octave.mp3)
 - [14 morph octave record.mp3](14 morph octave record.mp3)
 - [16 plucky arp morph oct.mp3](16 plucky arp morph oct.mp3)
 
-### mother32 vibrato
+#### mother32 vibrato
 - [13 plucky vibrato square.mp3](13 plucky vibrato square.mp3)
 
-### mother32 lfo gate
+## mother32 lfo gate
 - [15 lfo gate plucky square.mp3](15 lfo gate plucky square.mp3)
 
-### morphagene sound on sound jamming
+## morphagene sound on sound jamming
 - [16 plucky arp morph oct.mp3](16 plucky arp morph oct.mp3)
 
-### quantized bouncing ball
+## quantized bouncing ball
 - [17 bouncing pluck square.mp3](17 bouncing pluck square.mp3)
 
 

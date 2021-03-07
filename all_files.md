@@ -70,6 +70,7 @@
 - [68 gate held delay.mp3](68 gate held delay.mp3)
 
 ```
+// atom regex
 (^.*mp3{1})
 - [$1]($1)
 ```
