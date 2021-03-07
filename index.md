@@ -30,15 +30,28 @@ has a high degree of flexibility in timbre.
 ### high pass or low pass filter before a transition
 - [06 techno jam.mp3](06 techno jam.mp3)
 
-
-dfam sequence morphagene organise
+### dfam sequence morphagene organise highhats
 - [06 techno jam.mp3](06 techno jam.mp3)
 
-plaits solid inharmonic note after filter transition
+### plaits solid inharmonic note after filter transition
 - [06 techno jam.mp3 00:39](06 techno jam.mp3)
 
-dirty techno dfam kick
+### dirty techno morphing dfam kick
 - [06 techno jam.mp3 00:39](06 techno jam.mp3)
+
+### morphagene measure record
+- [07 butterfly repetition.mp3](07 butterfly repetition.mp3)
+- [08 butterfly repetition - directors cut.mp3](08 butterfly repetition - directors cut.mp3)
+
+### morphagene reverse measure
+- [07 butterfly repetition.mp3](07 butterfly repetition.mp3)
+- [08 butterfly repetition - directors cut.mp3](08 butterfly repetition - directors cut.mp3)
+
+### morphagene measure mix in and out with lfo
+- [07 butterfly repetition.mp3](07 butterfly repetition.mp3)
+- [08 butterfly repetition - directors cut.mp3](08 butterfly repetition - directors cut.mp3)
+
+
 
 # to exp
 ### dfam as a waveform generator
