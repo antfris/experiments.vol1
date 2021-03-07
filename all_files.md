@@ -68,8 +68,8 @@
 - [66 trainlet pulsar glisson microjam sound.mp3](66 trainlet pulsar glisson microjam sound.mp3)
 - [67 trainlet pulsar glisson automated jam.mp3](67 trainlet pulsar glisson automated jam.mp3)
 - [68 gate held delay.mp3](68 gate held delay.mp3)
-README.md
-_config.yml
-exp.json
-index.md
-test.md
+
+```
+(^.*mp3{1})
+- [$1]($1)
+```
