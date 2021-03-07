@@ -1,6 +1,6 @@
 # Concepts
 
-[list](test.html)
+[list](test.md)
 
 ### solid notes
 - [01 chordy accordian](01 chordy accordian.mp3)
