@@ -1,6 +1,6 @@
 # Concepts
 
-[list](test)
+[list of all experiments](all_files)
 
 ### solid notes
 - [01 chordy accordian](01 chordy accordian.mp3)
