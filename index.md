@@ -21,6 +21,8 @@ using an lfo to pan a sound in the stereo field.
 
 - [04 panning square bass lfolfo.mp3](04 panning square bass lfolfo.mp3)
 
+### Using SL to sequence drums
+
 ### DFAM kick
 Using the DFAM as a kick drum. has capability to live jam with the pitch, the glisson and frequency modulation. can also use external input to bring in other waveforms.
 
