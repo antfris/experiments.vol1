@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-title: [The title of your site]
-description: this is the description of my album
+title: experiments.vol1
+description: A selection of experiments in sound synthesis by Ant Frisby.
 logo: assets/images/cover.jpg
-show_downloads: true
+show_downloads: false
