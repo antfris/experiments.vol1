@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: [The title of your site]
+description: this is the description of my album
+logo: assets/images/cover.jpg
+show_downloads: true
