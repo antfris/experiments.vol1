@@ -4,7 +4,7 @@ var authorized = localStorage.getItem('authorized');
 if (!authorized) {
 	var _a = new URLSearchParams(window.location.search).get('_a');
 	if (!_a) {
-		_a = 'undefined'
+		_a = 'ae27ff'
 	}
 	window.location.replace("login?_a=" + _a);
 	//return;
