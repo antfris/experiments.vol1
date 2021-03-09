@@ -33,8 +33,8 @@ div#amplitude-player {
 /* Large and up */
 @media screen and (min-width: 64em) {
   div#amplitude-player {
-    max-height: 450px;
-    max-width: 600px;
+    max-height: 480px;
+    max-width: 720px;
   }
 }
 div#amplitude-left {
