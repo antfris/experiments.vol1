@@ -8,7 +8,7 @@
         <script type="text/javascript">
             var email = localStorage.getItem('email');
             if (email) {
-                window.location("/experiments.vol1/index.html" + '?_=' + new Date(););
+                window.location.replace("index.html");
             }
         </script>
     </head>
@@ -45,7 +45,7 @@
                         console.log(data);
                         if (data.message == 'authorized') {
                             localStorage.setItem('email', creds.email);
-                            window.location.replace("/");
+                            window.location.replace("/index.html");
                         } else {
                             document.getElementById('message').innerHTML = 'login attempt unauthorized'
                         }
