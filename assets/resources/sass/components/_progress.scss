@@ -33,7 +33,7 @@ div#progress-container{
   @media all and (-ms-high-contrast:none)
   {
     *::-ms-backdrop, progress#song-played-progress {
-      color: #00A0FF;
+      color: #000;
       border: none;
       background-color: #CFD8DC;
     }
@@ -41,7 +41,7 @@ div#progress-container{
 
   @supports (-ms-ime-align:auto) {
     progress#song-played-progress {
-      color: #00A0FF;
+      color: #000;
       border: none;
     }
   }
@@ -52,14 +52,14 @@ div#progress-container{
   }
 
   progress#song-played-progress[value]::-webkit-progress-value{
-    background-color: #00A0FF;
+    background-color: #000;
     border-radius: 5px;
   }
 
   progress#song-played-progress::-moz-progress-bar{
     background: none;
     border-radius: 5px;
-    background-color: #00A0FF;
+    background-color: #000;
     height: 5px;
     margin-top: -2px;
   }
@@ -151,11 +151,11 @@ div#progress-container{
   }
   input[type=range]::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    border: 1px solid #00a0ff;
+    border: 1px solid #000;
     height: 15px;
     width: 15px;
     border-radius: 16px;
-    background: #00a0ff;
+    background: #000;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7.5px;
@@ -174,11 +174,11 @@ div#progress-container{
   }
   input[type=range]::-moz-range-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    border: 1px solid #00a0ff;
+    border: 1px solid #000;
     height: 15px;
     width: 15px;
     border-radius: 16px;
-    background: #00a0ff;
+    background: #000;
     cursor: pointer;
   }
   input[type=range]::-ms-track {
@@ -203,11 +203,11 @@ div#progress-container{
   }
   input[type=range]::-ms-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-    border: 1px solid #00a0ff;
+    border: 1px solid #000;
     height: 15px;
     width: 15px;
     border-radius: 16px;
-    background: #00a0ff;
+    background: #000;
     cursor: pointer;
     height: 0px;
     display: block;

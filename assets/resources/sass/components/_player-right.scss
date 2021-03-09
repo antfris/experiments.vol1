@@ -7,7 +7,8 @@ div#amplitude-right{
 
   div.song{
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
+    background-color: #222;
 
     div.song-now-playing-icon-container{
       float: left;
@@ -17,7 +18,8 @@ div#amplitude-right{
 
       img.now-playing{
         display: none;
-        margin-top: 15px;
+        /*margin-top: 15px;*/
+        margin-top: 2px;
       }
     }
 
@@ -48,13 +50,14 @@ div#amplitude-right{
 
     div.song-meta-data{
       float: left;
-      width: calc( 100% - 110px );
+      /*width: calc( 100% - 110px );*/
+      width: calc( 100% - 30px );
 
       span.song-title{
-        color: #272726;
+        color: #999;
         font-size: 16px;
         display: block;
-        font-weight: 300;
+        /*font-weight: 300;*/
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

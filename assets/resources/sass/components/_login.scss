@@ -1,0 +1,27 @@
+#form, #message {
+    color: white;
+    font-size: 1.2em;
+}
+
+#message {
+    color: red
+}
+
+#form > input {
+    font-size: 0.8em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#form > label {
+    display: block;
+    margin-top: 10px;
+}
+
+#login-form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
