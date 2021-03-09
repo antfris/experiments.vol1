@@ -1,14 +1,16 @@
 // handle login
-var email = localStorage.getItem('email');
+var authorized = localStorage.getItem('authorized');
 
-if (!email) {
-	window.location.replace("login.html");
+if (!authorized) {
+	var _a = new URLSearchParams(window.location.search).get('_a');
+	if (!_a) {
+		_a = 'undefined'
+	}
+	window.location.replace("login?_a=" + _a);
 	//return;
 } else {
 	document.getElementById('all-content').style.display = "block";
 }
-
-document.getElementById('login-details').innerHTML = 'logged in as ' + email;
 
 // create the playlist
 /*
@@ -188,7 +190,7 @@ Amplitude.init({
 	continue_next: true,
 	callbacks: {
 		song_change: function(){
-			console.log(email);
+			console.log(authorized);
 			console.log('song change');
 			var url = "https://antfris.org/268274/experiments.vol1/sound"
 			var xhr = new XMLHttpRequest();
@@ -201,7 +203,7 @@ Amplitude.init({
 			};
 			xhr.open("POST", url, true);
 			xhr.setRequestHeader('Content-Type', 'application/json');
-			xhr.send(JSON.stringify({email: email, song: songs[Amplitude.getActiveIndex()].name}));
+			xhr.send(JSON.stringify({sig: authorized, song: songs[Amplitude.getActiveIndex()].name}));
 		}
 	},
 	songs: songs
