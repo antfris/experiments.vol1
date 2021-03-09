@@ -45,7 +45,7 @@
                         console.log(data);
                         if (data.message == 'authorized') {
                             localStorage.setItem('email', creds.email);
-                            window.location.replace("/index.html");
+                            window.location.replace("index.html");
                         } else {
                             document.getElementById('message').innerHTML = 'login attempt unauthorized'
                         }
