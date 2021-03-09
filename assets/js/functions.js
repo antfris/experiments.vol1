@@ -5,7 +5,7 @@ if (!email) {
 	window.location.replace("login.html");
 	//return;
 } else {
-	document.getElementById('blue-playlist-container').style.display = "block";
+	document.getElementById('all-content').style.display = "block";
 }
 
 document.getElementById('login-details').innerHTML = 'logged in as ' + email;
