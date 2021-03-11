@@ -1,22 +1,13 @@
-// handle login
-var authorized = localStorage.getItem('authorized');
-
-if (!authorized) {
-	var _a = new URLSearchParams(window.location.search).get('_a');
-	if (!_a) {
-		_a = 'ae27ff'
-	}
-	window.location.replace("login?_a=" + _a);
-	//return;
-} else {
-	document.getElementById('all-content').style.display = "block";
-}
+// display the page
+document.getElementById('all-content').style.display = "block";
 
 // create the playlist
 /*
 	find: 		(^[sound/0-9].*mp3{1})
 	replace: 	{url: "sound/$1", promo: true},
 */
+
+// build the array
 var raw_songs = [
 	{url: "sound/01 chordy accordian.mp3", promo: true},
 	{url: "sound/02 plucky star drops.mp3", promo: true},
@@ -87,7 +78,6 @@ var raw_songs = [
 	{url: "sound/67 trainlet pulsar glisson automated jam.mp3", promo: true},
 	{url: "sound/68 gate held delay.mp3", promo: true}
 ]
-
 for (var index in raw_songs) {
 	raw_songs[index].name = raw_songs[index].url.split('/')[1]
 	raw_songs[index].artist = "Ancient Android"
@@ -95,11 +85,10 @@ for (var index in raw_songs) {
 	raw_songs[index].cover_art_url = "assets/images/cover.jpg"
 
 }
-
 var songs = raw_songs
 
+// build the playlist from the array
 var container = document.getElementById('amplitude-right')
-
 for (var index in songs) {
     var newElement = document.createElement('div');
     newElement.id = 'id' + index;
@@ -118,55 +107,32 @@ for (var index in songs) {
 		</div>
 		<!--<span class="song-duration">${songs[index].duration}</span>-->
 	`
-
 	//songs[index].name;
     container.appendChild(newElement);
 }
 
-/*
-	When the bandcamp link is pressed, stop all propagation so AmplitudeJS doesn't
-	play the song.
-*/
-let bandcampLinks = document.getElementsByClassName('bandcamp-link');
 
-for( var i = 0; i < bandcampLinks.length; i++ ){
-	bandcampLinks[i].addEventListener('click', function(e){
-		e.stopPropagation();
-	});
-}
-
+// add event listeners to each song in the playlist
 let songElements = document.getElementsByClassName('song');
-
 for( var i = 0; i < songElements.length; i++ ){
-	/*
-		Ensure that on mouseover, CSS styles don't get messed up for active songs.
-	*/
+
+	// hover over playlist item
 	songElements[i].addEventListener('mouseover', function(){
 		this.style.backgroundColor = '#000';
-
 		this.querySelectorAll('.song-meta-data .song-title')[0].style.color = '#FFFFFF';
-		//this.querySelectorAll('.song-meta-data .song-artist')[0].style.color = '#FFFFFF';
-
 		if( !this.classList.contains('amplitude-active-song-container') ){
 			this.querySelectorAll('.play-button-container')[0].style.display = 'block';
 		}
-		//this.querySelectorAll('.song-duration')[0].style.color = '#FFFFFF';
 	});
 
-	/*
-		Ensure that on mouseout, CSS styles don't get messed up for active songs.
-	*/
+	// hover out of playlist item
 	songElements[i].addEventListener('mouseout', function(){
 		this.style.backgroundColor = '#222';
 		this.querySelectorAll('.song-meta-data .song-title')[0].style.color = '#999';
-		//this.querySelectorAll('.song-meta-data .song-artist')[0].style.color = '#607D8B';
 		this.querySelectorAll('.play-button-container')[0].style.display = 'none';
-		//this.querySelectorAll('.song-duration')[0].style.color = '#607D8B';
 	});
 
-	/*
-		Show and hide the play button container on the song when the song is clicked.
-	*/
+	// Show and hide the play button container on the song when the song is clicked.
 	songElements[i].addEventListener('click', function(){
 		this.querySelectorAll('.play-button-container')[0].style.display = 'none';
 	});
@@ -176,16 +142,37 @@ for( var i = 0; i < songElements.length; i++ ){
 document.getElementById("scrollButton").addEventListener('click', scrollToPlayer)
 function scrollToPlayer(e) {
   e.preventDefault();
-  const offsetTop = document.getElementById("blue-playlist-container").offsetTop;
+  const offsetTop = document.getElementById("page-2").offsetTop;
   scroll({
-    top: offsetTop - 150,
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+document.getElementById("button-why").addEventListener('click', scrollToPage3)
+function scrollToPage3(e) {
+  e.preventDefault();
+  const offsetTop = document.getElementById("page-3").offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+document.getElementById("button-connect").addEventListener('click', scrollToPage4)
+function scrollToPage4(e) {
+  e.preventDefault();
+  const offsetTop = document.getElementById("page-4").offsetTop;
+  scroll({
+    top: offsetTop,
     behavior: "smooth"
   });
 }
 
-/*
-	Initializes AmplitudeJS
-*/
+/*document.getElementById("scrollButton").addEventListener("click", function() {
+	document.getElementById("top-content-text").classList.toggle("is-active");
+	document.getElementById("top-content-image").classList.toggle("is-active");
+});*/
+
+// Initializes AmplitudeJS
 Amplitude.init({
 	continue_next: true,
 	callbacks: {

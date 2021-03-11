@@ -9,3 +9,37 @@ body{
   margin:0;
   padding: 0;
 }
+
+/* unvisited link */
+a:link {
+  color: #999;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #999;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: #999;
+  text-decoration: none;
+}
+
+.ext {
+    background-image: url('../images/external-link-ltr-icon.svg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 13px;
+}
+
+.white {
+    color: white!important;
+}

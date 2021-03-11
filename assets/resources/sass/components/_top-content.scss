@@ -12,7 +12,14 @@ div#top-content-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*transition: height 300ms;
+    transition: width 300ms;*/
 }
+
+/*div#top-content-image.is-active {
+    height: 10vh;
+    width: 100vw;
+}*/
 
 div#top-content-image > img {
     mix-blend-mode: multiply;
@@ -32,7 +39,16 @@ div#top-content-text {
     letter-spacing: 10px;
     color: #999;
     text-transform: uppercase;
+    /*transition: height 300ms;
+    transition: width 300ms;
+    transition: left 300ms;*/
 }
+
+/*div#top-content-text.is-active {
+    height: 10vh;
+    width: 100vw;
+    left: 0vw;
+}*/
 
 div#top-content-text > div {
     text-align: center;
@@ -46,6 +62,74 @@ div#scrollButton {
     margin-top: 20px;
 }
 
+.experiments-header {
+    letter-spacing: 10px;
+    color: #999;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.blank-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blank-page > img {
+    filter: invert(1);
+    mix-blend-mode: lighten;
+    height: 30vh;
+}
+
+#page-2, #page-3, #page-4 {
+    min-height: 100vh;
+}
+
+#page-button {
+    width: 100vw;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#page-button > div {
+    letter-spacing: 10px;
+    color: #999;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 0px 5px 0px 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.text-content {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content > p, .text-content > h1, .text-content > h2 {
+    margin: auto;
+    width: 60vw;
+    color: #999;
+}
+
+.text-content > h1 {
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 8px;
+    padding: 50px 0px 10px 0px;
+    text-transform: uppercase;
+}
+.text-content > p {
+    margin-bottom: 20px;
+    line-height: 29px;
+    font-size: 1.1em;
+}
+
+
 @media screen and (max-width: 39.9375em) {
     div#top-content-image {
         width: 100vw;
@@ -53,5 +137,8 @@ div#scrollButton {
     div#top-content-text {
         width: 100vw;
         left: 0px;
+    }
+    .text-content > p, .text-content > h1, .text-content > h2 {
+        width: 95vw;
     }
 }

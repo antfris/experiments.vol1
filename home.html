@@ -1,81 +1,153 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ancient Androids</title>
+		<title>Ancient Android</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script type="text/javascript" src="assets/js/amplitude.min.js"></script>
+		<script type="text/javascript">
+			// handle login
+			var authorized = localStorage.getItem('authorized');
+
+			if (!authorized) {
+				var _a = new URLSearchParams(window.location.search).get('_a');
+				if (!_a) {
+					_a = 'ae27ff'
+				}
+				window.location.replace("login?_a=" + _a);
+				//return;
+			}
+		</script>
 		<link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
 	</head>
 	<body>
 		<div id="all-content" style="display: none">
+
+
 			<div id="top-content-image">
 				<img src="assets/images/stone.jpg" />
 			</div>
 			<div id="top-content-text">
 				<div>
-
 					<div>experiments.vol1</div>
-					<div id="scrollButton">play</div>
+					<div id="scrollButton">player</div>
 				</div>
 			</div>
-			<div id="blue-playlist-container">
-				<div id="amplitude-player">
-					<div id="amplitude-left">
-						<img data-amplitude-song-info="cover_art_url"/>
-						<div id="player-left-bottom">
-							<div id="time-container">
-								<span class="current-time">
-									<span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
-								</span>
-								<div id="progress-container">
-									<input type="range" class="amplitude-song-slider"/>
-									<progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-									<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-								</div>
-								<span class="duration">
-									<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-								</span>
-							</div>
 
-							<div id="control-container">
-								<div id="repeat-container">
-									<div class="amplitude-repeat" id="repeat"></div>
-									<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+			<div class="blank-page">
+				<img src="assets/images/stone.jpg" />
+			</div>
+
+			<div id="page-2">
+				<div class="experiments-header">experiments.vol1 - player</div>
+				<div id="blue-playlist-container">
+					<div id="amplitude-player">
+						<div id="amplitude-left">
+							<img data-amplitude-song-info="cover_art_url"/>
+							<div id="player-left-bottom">
+								<div id="time-container">
+									<span class="current-time">
+										<span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+									</span>
+									<div id="progress-container">
+										<input type="range" class="amplitude-song-slider"/>
+										<progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+										<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+									</div>
+									<span class="duration">
+										<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+									</span>
 								</div>
 
-								<div id="central-control-container">
-									<div id="central-controls">
-										<div class="amplitude-prev" id="previous"></div>
-										<div class="amplitude-play-pause" id="play-pause"></div>
-										<div class="amplitude-next" id="next"></div>
+								<div id="control-container">
+									<div id="repeat-container">
+										<div class="amplitude-repeat" id="repeat"></div>
+										<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+									</div>
+
+									<div id="central-control-container">
+										<div id="central-controls">
+											<div class="amplitude-prev" id="previous"></div>
+											<div class="amplitude-play-pause" id="play-pause"></div>
+											<div class="amplitude-next" id="next"></div>
+										</div>
+									</div>
+
+									<div id="volume-container">
+										<div class="volume-controls">
+											<div class="amplitude-mute amplitude-not-muted"></div>
+											<input type="range" class="amplitude-volume-slider"/>
+											<div class="ms-range-fix"></div>
+										</div>
+										<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
 									</div>
 								</div>
 
-								<div id="volume-container">
-									<div class="volume-controls">
-										<div class="amplitude-mute amplitude-not-muted"></div>
-										<input type="range" class="amplitude-volume-slider"/>
-										<div class="ms-range-fix"></div>
+								<div id="meta-container">
+									<span data-amplitude-song-info="name" class="song-name"></span>
+
+									<div class="song-artist-album">
+										<span data-amplitude-song-info="artist"></span>
+										<span data-amplitude-song-info="album"></span>
 									</div>
-									<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
-								</div>
-							</div>
-
-							<div id="meta-container">
-								<span data-amplitude-song-info="name" class="song-name"></span>
-
-								<div class="song-artist-album">
-									<span data-amplitude-song-info="artist"></span>
-									<span data-amplitude-song-info="album"></span>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div id="amplitude-right">
+						<div id="amplitude-right">
 
+						</div>
 					</div>
 				</div>
+
+				<div id="page-button">
+					<div id="button-why">explaination</div>
+				</div>
 			</div>
+
+			<div class="blank-page">
+				<img src="assets/images/stone.jpg" />
+			</div>
+
+			<div id="page-3">
+				<div class="experiments-header">experiments.vol1 - explaination</div>
+				<div class="text-content">
+					<h1 class="white">TLDR</h1>
+					<p>The project experiments.vol1 is a process to explore ideas in electronic music that are based on interacting voltages.</p>
+
+					<h1 class="white">Interacting Voltages</h1>
+					<p>It seems weird, but sound is represented in our mind as oscillations of voltage. Crazy. When you hear a pitch, say middle C (440hz), some neurons in your brain, prior to cognition, recreate that pitch as a BRAINWAVE, at the same frequency as the pitch you hear<sup>1</sup>.</p>
+
+					<p>That means that when you're at a concert, your brain is literally <span class="white">in harmony</span> with the people around you. Being on the same wavelength suddenly takes on a more literal sense.</p>
+
+					<p>Concurrently, music can also be created using voltages, and patterns of voltages. I won’t get into the technicalities, but this is the basis for analog synthesis.</p>
+
+					<h1 class="white">Process</h1>
+					<p>The classic artistic process. The writers block. From Van Gogh to Salvador Dali, Matisse to Picasso, Mondrian to Lichtenstein, process is critical.</p>
+
+					<p>The process that has been developed and employed for this project is that over the period of a year, every idea that was conceived about how voltages could interact was written down on a notes app on a phone. then paper was cut up into a7 segments and each idea with written on one note using a 1970s brother typewriter. This resulted in over 200 cards of inspiration.</p>
+
+					<p>This process forms the basis for all experiments projects where experiments.vol1 only scratches the surface of potential.</p>
+
+					<h1 class="white">Future</h1>
+					<p></p>
+
+					<h1 class="white">Symbolism</h1>
+
+					<p>1: <a target="_blank" href="https://en.wikipedia.org/wiki/This_Is_Your_Brain_on_Music">This Is Your Brain on Music<span class="ext"></span></a> by Daniel J Levitin.</p>
+
+					<div id="page-button">
+						<div id="button-connect">connect</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="blank-page">
+				<img src="assets/images/stone.jpg" />
+			</div>
+			<div id="page-4">
+				<div class="experiments-header">experiments.vol1 - connect</div>
+			</div>
+
 		</div>
 
 		<script type="text/javascript" src="assets/js/functions.js"></script>

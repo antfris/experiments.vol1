@@ -2,12 +2,9 @@ div#amplitude-player{
   background: #444;
   box-shadow: 0 2px 12px 8px rgba(0,0,0,0.10);
   margin: auto;
-  margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   max-width: 900px;
-  margin-top: 5vh;
-  margin-bottom: 50vh;
 }
 
 
@@ -15,7 +12,7 @@ div#amplitude-player{
 @media screen and (max-width: 39.9375em) {
   div#amplitude-player{
     flex-direction: column;
-    margin: 50px;
+    margin: 0px 50px 0px 50px;
   }
 }
 

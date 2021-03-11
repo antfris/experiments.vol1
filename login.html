@@ -4,8 +4,13 @@
     <head>
         <meta charset="utf-8">
         <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
         <script type="text/javascript">
+            var authorized = localStorage.getItem('authorized');
+            if (authorized) {
+                window.location.replace("home?_a=" + authorized);
+            }
             var _a = new URLSearchParams(window.location.search).get('_a');
             if (!_a) {
                 _a = 'ae27ff';
